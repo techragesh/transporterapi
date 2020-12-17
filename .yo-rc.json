@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.kodebyt.api"
+    },
+    "jhipsterVersion": "6.10.5",
+    "applicationType": "monolith",
+    "baseName": "transporterapi",
+    "packageName": "com.kodebyt.api",
+    "packageFolder": "com/kodebyt/api",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZjQ0MjFiZDg4MDJhZDNiMTg3NWJlYjc4ZDE1MzM0MzkzZWM0MTQzODQ2MzMxYzdmNjk1ZmRkOWMzZDNiZGMwOWIzMWM0NTYxYmIyNTAyZTA0MzI2NDdkNTY0YjU1ZTU4MDZiOTg1MTVlYTA3OTk1MzAwZjc3NmZjYTZkN2I2M2I=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "creationTimestamp": 1608209511330,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
