@@ -1,0 +1,63 @@
+{
+  "name": "UserAccount",
+  "fields": [
+    {
+      "fieldName": "deviceId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mobile",
+      "fieldType": "Mobile",
+      "fieldValues": "IOS,ANDROID,MICROSOFT"
+    },
+    {
+      "fieldName": "socialLogin",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "facebookId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "googleId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "otp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastLogin",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "modifiedDate",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "customer",
+      "otherEntityRelationshipName": "userAccount",
+      "relationshipName": "customer",
+      "otherEntityField": "id",
+      "ownerSide": true
+    }
+  ],
+  "changelogDate": "20201217130409",
+  "entityTableName": "user_account",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

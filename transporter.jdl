@@ -1,0 +1,47 @@
+enum Gender {
+   FEMALE, MALE
+}
+
+enum Mobile {
+   IOS, ANDROID, MICROSOFT
+}
+
+entity Customer {
+    name String required minlength(2)
+    email String
+    phoneNumber String
+    gender Gender
+    dob String
+    addressLine1 String
+    addressLine2 String
+    addressLine3 String
+    addressLine4 String
+    townCity String
+    zip String
+    state String
+    country String
+    createDate LocalDate
+    modifiedDate LocalDate
+}
+
+entity UserAccount {
+    deviceId String
+    mobile Mobile
+    socialLogin Boolean
+    facebookId String
+    googleId String
+    otp String
+    lastLogin LocalDate
+    createdDate LocalDate
+    modifiedDate LocalDate
+}
+
+relationship OneToOne {
+    UserAccount{Customer} to Customer
+}
+
+// Use Data Transfer Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all
+service all with serviceClass
